@@ -1,0 +1,213 @@
+/*Page Styles*/
+
+html {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0.03em;
+	-webkit-font-smoothing: antialiased;
+	background-color: #b9ac9c;
+}
+
+
+/*Link Style*/
+
+a {
+	text-decoration: none;
+}
+
+a:link, 
+a:visited {
+	color: #b9ac9c;
+}
+
+a:hover {
+	color: #FFFBF5;
+	cursor: pointer;
+}
+
+li.active a {
+    color: black;
+    font-weight: bold;
+}
+
+/*Main Navigation*/
+
+.nav-main {
+	background-color: #232d33;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #b9ac9c;
+	z-index: 9999;
+}
+
+.icons {
+	overflow: auto;
+	display: inline-block;
+	float: left;
+	padding-left: 1.5rem;
+}
+
+.nav-main .icons > li {
+	height: 2.5rem;
+	width: 2.5rem;
+	padding: 0.8rem 1rem;
+	display: inline-block;
+}
+
+.nav-main .github a {
+	color: #4183c4;
+}
+
+.nav-main .twitter a {
+	color: #55acee;
+}
+
+.nav-main .facebook a {
+	color: #4c66a4;
+}
+
+.nav-main .linkeden a {
+	color: #0077b5;
+}
+
+.nav-main .nav-links {
+    float: right;
+    margin-top: 1.56rem;
+    padding-left: 0rem;
+    padding-right: 1.5rem;
+}
+.nav-main .nav-links li {
+    display: inline-block;
+    margin-left: 1.56rem;
+    margin-right: .9rem;
+}
+
+/* Masthead Styles */
+
+.masthead {
+    padding: 20rem 0;
+    background-image: url("../images/masthead.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-top: solid 4rem #FFFBF5;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #b9ac9c;
+}
+
+.masthead-heading {
+    margin-top: -3.5rem;
+    font-family: "Juluis Sans One", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    letter-spacing: -0.02rem;
+    color: #FFFBF5;
+    text-align: center;
+    margin-bottom: 0rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.masthead-intro {
+    margin-bottom: 0.1rem;
+    font-family: "Juluis Sans One", Georgia, serif;
+    font-size: 2rem;
+    color: #FFFBF5;
+    text-align: center;
+    margin-top: 0rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Body Styles */
+
+.content {
+	color: #1d1e21;
+	text-align: center;
+	font: inherit;
+}
+
+.cases {
+	padding-bottom: 2rem;
+	overflow: auto;
+}
+
+.cases h2 {
+	font-size: 2rem;
+	margin: 1.625rem 0 1.5rem;
+	font-weight: 300;
+}
+.content-icons {
+    width: 33.3333333%;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+}
+
+.content-icons img {
+	max-width: 90%;
+}
+
+.cases h3 {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.introduction-section img {
+    float: right;
+    border-radius: 30px;
+    margin: 1.5rem 1.5rem;
+    width: 10rem;
+}
+
+.introduction-section p {
+	padding: 3.5rem 3.5rem 1.5rem 3.5rem;
+	color: black;
+	font-size: 1.5rem;
+	font-family: "Crimson Text", "Helvetica Neue", sans-serif;
+}
+
+/* Footer Styles */
+
+.footer {
+	background-color: #232d33;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 3px solid #b9ac9c;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 640px) {
+	.icons {
+		display: none;
+	}
+	.nav-links {
+		display: block;
+		float: left;
+	}
+	.content-icons {
+		display: block;
+		width: 100%;
+	}
+
+	.introduction-section img {
+    border-radius: 30px;
+    margin: 1.5rem 1.5rem;
+    width: 90%;
+}
+}
